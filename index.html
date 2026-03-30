@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Contabilidade Digital | Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">NEXUS<span>CONTABILIDADE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+            <div class="menu-toggle">☰</div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Contabilidade Digital para o Futuro do seu Negócio</h1>
+            <p>Sua empresa organizada, lucrativa e segura. Focamos no seu crescimento enquanto cuidamos da burocracia.
+            </p>
+            <div class="cta-buttons">
+                <a href="#contato" class="btn-primary">Falar com Especialista</a>
+                <a href="#servicos" class="btn-secondary">Nossos Serviços</a>
+            </div>
+        </div>
+    </section>
+
+    <div id="chat-widget">
+        <div id="chat-header">
+            <span>NexusBot Atendimento</span>
+            <button id="close-chat">×</button>
+        </div>
+        <div id="chat-body">
+            <div class="msg bot">Olá! Eu sou o NexusBot. Como posso ajudar você hoje?</div>
+        </div>
+        <div id="chat-footer">
+            <button onclick="botResponse('impostos')">Dúvidas sobre Impostos</button>
+            <button onclick="botResponse('cursos')">Preços de Cursos</button>
+            <button onclick="botResponse('atendente')">Falar com Atendente</button>
+        </div>
+    </div>
+    <button id="open-chat">💬</button>
+    <section class="products container" id="produtos">
+        <div class="section-header">
+            <h2>Nossos Cursos</h2>
+            <p>Capacitação prática para empreendedores e profissionais.</p>
+        </div>
+
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-badge">Mais Vendido</div>
+                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=400&q=80"
+                    alt="Curso MEI">
+                <div class="product-info">
+                    <h3>Gestão Financeira para MEI</h3>
+                    <p>Aprenda a separar suas contas pessoais das profissionais e lucre mais.</p>
+                    <div class="price">R$ 99,90</div>
+                    <a href="#" class="btn-product">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=400&q=80"
+                    alt="Planejamento Tributário">
+                <div class="product-info">
+                    <h3>Planejamento Tributário</h3>
+                    <p>Domine os impostos e escolha o melhor regime para sua empresa.</p>
+                    <div class="price">R$ 197,00</div>
+                    <a href="#" class="btn-product">Saiba Mais</a>
+                </div>
+            </div>
+
+            <div class="product-card">
+                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=400&q=80"
+                    alt="Investimentos">
+                <div class="product-info">
+                    <h3>Tesouraria e Fluxo de Caixa</h3>
+                    <p>Controle cada centavo que entra e sai com planilhas profissionais.</p>
+                    <div class="price">R$ 149,00</div>
+                    <a href="#" class="btn-product">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossos Serviços Especializados</h2>
+                <p>Soluções completas para manter sua empresa em conformidade e crescendo.</p>
+            </div>
+
+            <div class="service-list">
+                <div class="service-item">
+                    <div class="service-icon">🚀</div>
+                    <h3>Abertura de Empresas</h3>
+                    <p>Formalize seu negócio de forma rápida, segura e sem burocracia desnecessária.</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">📊</div>
+                    <h3>BPO Financeiro</h3>
+                    <p>Terceirize sua gestão financeira e foque no que realmente importa: vender mais.</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">⚖️</div>
+                    <h3>Consultoria Tributária</h3>
+                    <p>Análise detalhada para garantir que você pague o mínimo de impostos dentro da lei.</p>
+                </div>
+
+                <div class="service-item">
+                    <div class="service-icon">📝</div>
+                    <h3>Escrituração Contábil</h3>
+                    <p>Balanços e relatórios precisos para uma visão clara da saúde do seu negócio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact container" id="contato">
+        <div class="section-header">
+            <h2>Fale com a Nexus</h2>
+            <p>Tire suas dúvidas ou peça um orçamento personalizado.</p>
+        </div>
+
+        <div class="contact-wrapper">
+            <form id="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Seu Nome Completo" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="Seu E-mail Profissional" required>
+                </div>
+                <div class="form-group">
+                    <select id="subject">
+                        <option value="">Qual o seu interesse?</option>
+                        <option value="contabilidade">Serviços Contábeis</option>
+                        <option value="cursos">Cursos e Treinamentos</option>
+                        <option value="outro">Outros Assuntos</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder="Como podemos ajudar seu negócio?" required></textarea>
+                </div>
+                <button type="submit" class="btn-submit">Enviar Mensagem</button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Informações de Contato</h3>
+                <p>📍 Av. Paulista, 1000 - São Paulo/SP</p>
+                <p>📞 (11) 9999-9999</p>
+                <p>📧 contato@nexuscontabil.com.br</p>
+                <div class="social-links">
+                    <span>LinkedIn</span> | <span>Instagram</span> | <span>Facebook</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

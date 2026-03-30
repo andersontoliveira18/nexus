@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursos e Treinamentos | Nexus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <div class="logo">NEXUS<span>CONTABILIDADE</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="catalog-header">
+        <div class="container">
+            <h1>Academia Nexus</h1>
+            <p>Educação financeira e contábil direto ao ponto.</p>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active" onclick="filterSelection('all')">Todos</button>
+                <button class="filter-btn" onclick="filterSelection('gestao')">Gestão</button>
+                <button class="filter-btn" onclick="filterSelection('tributario')">Tributário</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container catalog-grid">
+        <div class="product-card filter-item gestao">
+            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400" alt="Gestão MEI">
+            <div class="product-info">
+                <h3>Gestão para MEI</h3>
+                <p>Domine suas finanças e cresça com segurança.</p>
+                <div class="price">R$ 99,90</div>
+                <button class="btn-product" onclick="openCheckout('Gestão para MEI')">Comprar Agora</button>
+            </div>
+        </div>
+
+        <div class="product-card filter-item tributario">
+            <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=400" alt="Impostos">
+            <div class="product-info">
+                <h3>Lucro Real na Prática</h3>
+                <p>O guia definitivo para grandes empresas.</p>
+                <div class="price">R$ 1.997,00</div>
+                <button class="btn-product" onclick="openCheckout('Lucro Real')">Comprar Agora</button>
+            </div>
+        </div>
+    </section>
+
+    <div id="checkout-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Finalizar Inscrição</h2>
+            <p id="product-name-modal"></p>
+            <p>Você será redirecionado para o ambiente seguro da Hotmart.</p>
+            <button class="btn-submit">Ir para Pagamento</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
